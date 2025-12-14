@@ -13,7 +13,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   'http://localhost:4200',
-  'https://your-frontend.vercel.app'
+  'https://angular21-graphql.vercel.app/'
 ];
 
 app.use(
