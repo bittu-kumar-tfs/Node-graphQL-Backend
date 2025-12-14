@@ -11,9 +11,14 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 
+const allowedOrigins = [
+  'http://localhost:4200',
+  'https://your-frontend.vercel.app'
+];
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: allowedOrigins,
     credentials: true
   })
 );
